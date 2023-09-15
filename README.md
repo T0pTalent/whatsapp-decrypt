@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/ElDavoo/wa-crypt-tools/badge.svg?branch=main)](https://coveralls.io/github/ElDavoo/wa-crypt-tools?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/ElDavoo/whatsapp-decrypt/badge.svg?branch=main)](https://coveralls.io/github/ElDavoo/whatsapp-decrypt?branch=main)
 
 # WhatsApp Crypt Tools
 Decrypts WhatsApp .crypt12, .crypt14 and .crypt15 files, **given the key file** or the 64-characters long key.  
@@ -30,13 +30,13 @@ of the program.
 
 You can install this script as a package through pip. Just use:
 ```
-python -m pip install wa-crypt-tools
+python -m pip install whatsapp-decrypt
 ```
 
 Install the development version with new features and tools:
 ```
-$ git clone https://github.com/ElDavoo/wa-crypt-tools.git
-$ cd wa-crypt-tools
+$ git clone https://github.com/ElDavoo/whatsapp-decrypt.git
+$ cd whatsapp-decrypt
 $ python -m pip install .
 ```
 
@@ -147,9 +147,9 @@ First, after cloning the repository, do an editable installation of the package 
 
 This will also install the optional dependencies of the package.
 
-Next, download the protobuf compiler from its repository [here](https://github.com/protocolbuffers/protobuf/releases). You can move the protoc program to the `wa-crypt-tools/proto` folder where the .proto files are.
+Next, download the protobuf compiler from its repository [here](https://github.com/protocolbuffers/protobuf/releases). You can move the protoc program to the `whatsapp-decrypt/proto` folder where the .proto files are.
  
-Replace the protobuf classes as needed and run `protoc` to generate the python classes. From the `wa-crypt-tools/proto` directory of the project, run:
+Replace the protobuf classes as needed and run `protoc` to generate the python classes. From the `whatsapp-decrypt/proto` directory of the project, run:
 
 `./protoc --python_out=../src/wa_crypt_tools/proto --proto_path=. *.proto`
 
